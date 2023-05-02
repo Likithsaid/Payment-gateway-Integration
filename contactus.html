@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <section id="contact-us">
+  <h2>Contact Us</h2>
+  <form id="contact-form">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="subject">Subject:</label>
+    <input type="text" id="subject" name="subject" required>
+
+    <label for="message">Message:</label>
+    <textarea id="message" name="message" required></textarea>
+
+    <input type="submit" value="Send">
+    <script type="text/javascript">
+      const contactForm = document.getElementById('contact-form');
+
+contactForm.addEventListener('submit', (event) => {
+  event.preventDefault();
+  alert('Thanks for your feedback!');
+  contactForm.reset();
+});
+
+    </script>
+  </form>
+</section>
+<section>
+  <center>
+    <h2>Our Contact Details</h2>
+    <p>GRIPdonation.com</p>
+    <p>+91 9550942769</p>
+    <p>gripdonation1@gmail.com</p>
+  </center>
+</section>
+</head>
+</html>
